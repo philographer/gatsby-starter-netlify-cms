@@ -14,7 +14,7 @@ const Footer = class extends React.Component {
         <div className="content">
           <div className="container"> 
             <div className="columns is-centered">
-              <div className="column has-text-centered is-4">
+              <div className="column foot has-text-centered is-4">
                 <section>
                   <Link className="navbar-item has-text-white-ter" to="/" style={{ justifyContent: 'center' }}>
                     Home
@@ -24,7 +24,7 @@ const Footer = class extends React.Component {
                   </Link>
                 </section>  
               </div>
-              <div className="column has-text-centered is-4">
+              <div className="column foot has-text-centered is-4">
                 <Link className="navbar-item has-text-white-ter" to="/partner" style={{ justifyContent: 'center' }}>
                   Partner
                 </Link>
@@ -32,7 +32,7 @@ const Footer = class extends React.Component {
                   Contact
                 </Link>
               </div>
-              <div className="column has-text-centered is-4">
+              <div className="column foot has-text-centered is-4">
                 <Link className="navbar-item has-text-white-ter" to="/sponser" style={{ justifyContent: 'center' }}>
                   Sponser
                 </Link>
