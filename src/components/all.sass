@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import "~bulma/bulma.sass";
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -9,6 +10,10 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+
+.hover-blue
+  &:hover
+    color: $kaldi-red;
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -93,6 +98,8 @@ $menu-item-active-background-color:	$kaldi-red-invert
 $menu-list-border-left: 1px solid $kaldi-red-invert
 $menu-label-color: $white-ter
 
+.navbar-item:hover
+  color: black;
 
 .menu-label
   font-size: 1em !important
