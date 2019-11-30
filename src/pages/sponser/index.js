@@ -28,7 +28,7 @@ export default class SponserIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <SponserRoll />
+              <SponserRoll count={6}/>
             </div>
           </div>
         </section>

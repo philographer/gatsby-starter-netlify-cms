@@ -1,14 +1,18 @@
 ---
 templateKey: sponser-post
-title: 스폰서 1
-date: 2017-01-04T15:04:10.000Z
-featuredpost: false
-featuredimage: /img/chemex.jpg
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
+date: 2016-12-17T15:04:10.000Z
+name: 스폰서 1
+subName: 서브네임 1
+dept: 부서
+establishmentYear: 2016-12-17
+slogan: 슬로건 1
+introduction: 소개말
+location: 위치
+email: 이메일
+homepage: 홈페이지
+logo: /img/chemex.jpg
 tags:
-  - brewing
-  - chemex
+  - flavor
+  - tasting
 ---
-![chemex](/img/chemex.jpg)
-
-스폰서1 블라블라블라
+스폰서 1 블라블라블서
