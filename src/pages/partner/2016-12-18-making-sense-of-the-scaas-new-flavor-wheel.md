@@ -8,7 +8,7 @@ slogan: 슬로건 2
 introduction: 소개말
 location: 위치
 email: 이메일
-homepage: 홈페이지
+homepage: http://teamnexters.com/
 logo: /img/flavor_wheel.jpg
 tags:
   - flavor

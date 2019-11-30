@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
@@ -16,7 +16,10 @@ export const IndexPageTemplate = ({
   secondEvent,
   thirdEvent,
   sponserList,
-  partnerList
+  partnerList,
+  setIsShow,
+  isShow,
+  setModalData
 }) => (
   <div>
     <div
@@ -108,7 +111,7 @@ export const IndexPageTemplate = ({
       <section className="section">
         <div className="container">
           <div className="content">
-            <PartnerRoll count={6}></PartnerRoll>
+            <PartnerRoll count={6} setIsShow={setIsShow} isShow={isShow} setModalData={setModalData}></PartnerRoll>
           </div>
         </div>
       </section>
@@ -118,7 +121,7 @@ export const IndexPageTemplate = ({
       <section className="section">
         <div className="container">
           <div className="content">
-            <SponserRoll count={6}></SponserRoll>
+            <SponserRoll count={6} setIsShow={setIsShow} isShow={isShow} setModalData={setModalData}></SponserRoll>
           </div>
         </div>
       </section>
@@ -156,9 +159,22 @@ const IndexPage = ({ data }) => {
   const indexFrontmatter = data.index.frontmatter;
   const sponserList = data.sponser.edges;
   const partnerList = data.partner.edges;
+  const [isShow, setIsShow] = useState(false);
+  const [modalData, setModalData] = useState({
+    name: '',
+    subName: '',
+    establishmentYear: '',
+    slogan: '',
+    introduction: '',
+    location: '',
+    email: '',
+    logo: '',
+    dept: ''
+  });
+  console.log('modalData is', modalData)
 
   return (
-    <Layout>
+    <Layout isShow={isShow} setIsShow={setIsShow} modalData={modalData}>
       <IndexPageTemplate
         image={indexFrontmatter.image}
         title={indexFrontmatter.title}
@@ -171,6 +187,9 @@ const IndexPage = ({ data }) => {
         intro={indexFrontmatter.intro}
         sponserList={sponserList}
         partnerList={partnerList}
+        setIsShow={setIsShow}
+        isShow={isShow}
+        setModalData={setModalData}
       />
     </Layout>
   );

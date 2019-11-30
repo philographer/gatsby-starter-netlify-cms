@@ -7,7 +7,7 @@ const ALL_COUNT = Number.MAX_VALUE;
 
 class PartnerRoll extends React.Component {
   render() {
-    const { data, count } = this.props;
+    const { data, count, setIsShow, setModalData } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
@@ -31,27 +31,22 @@ class PartnerRoll extends React.Component {
                           />
                         </div>
                       ) : null}
-                      <p className="post-meta">
-                        <Link
-                          className="title has-text-primary is-size-4"
-                          to={post.fields.slug}
-                        >
+                      <p className="post-meta" onClick={() => {setIsShow(true); setModalData(post.frontmatter);}}>
                           {post.frontmatter.name}
-                        </Link>
                         <span> &bull; </span>
                         <span className="subtitle is-size-5 is-block">
                           {post.frontmatter.date}
                         </span>
                       </p>
                     </header>
-                    <p>
+                    <span>
                       {post.excerpt}
                       <br />
                       <br />
-                      <Link className="button" to={post.fields.slug}>
-                        Keep Reading →
-                      </Link>
-                    </p>
+                    </span>
+                    <div className="button" onClick={() => {setIsShow(true); setModalData(post.frontmatter);}}>
+                      Detail →
+                    </div>
                   </article>
                 </div>
               );
@@ -70,7 +65,7 @@ PartnerRoll.propTypes = {
   })
 };
 
-export default ({ count }) => (
+export default ({ count, setIsShow, setModalData }) => (
   <StaticQuery
     query={graphql`
       query PartnerRollQuery {
@@ -87,6 +82,13 @@ export default ({ count }) => (
               }
               frontmatter {
                 name
+                subName
+                establishmentYear
+                slogan
+                introduction
+                location
+                email
+                homepage
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 logo {
@@ -102,6 +104,6 @@ export default ({ count }) => (
         }
       }
     `}
-    render={data => <PartnerRoll data={data} count={count || ALL_COUNT} />}
+    render={data => <PartnerRoll data={data} count={count || ALL_COUNT} setIsShow={setIsShow} setModalData={setModalData}/>}
   />
 );
