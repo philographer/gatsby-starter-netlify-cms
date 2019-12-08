@@ -16,7 +16,7 @@ class SponserRoll extends React.Component {
           posts.map(({ node: post }, idx) => {
             if (idx < count)
               return (
-                <div className="is-parent column is-6" key={post.id}>
+                <div className="is-parent column is-4" key={post.id}>
                   <article
                     className={`blog-list-item tile is-child box notification`}
                   >
