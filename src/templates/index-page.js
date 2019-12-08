@@ -72,38 +72,47 @@ export const IndexPageTemplate = ({
       </div>
     </div>
     <div className="columns is-gapless" style={{ marginBottom: 0 }}>
-      <div className="column">
+      <div className="column" style={{ position: "relative" }}>
         <div
-          style={{ position: "absolute", zIndex: 10 }}
-          className="has-text-white-ter"
-        >
-          유니톤
+            style={{ position: "absolute", zIndex: 10 }}
+            className="has-text-white-ter"
+          >
+          {firstEvent.title} <br/>
+          {firstEvent.title_kr} <br/>
+          {firstEvent.date} <br/>
+          {firstEvent.description}
         </div>
         <Img
           fluid={firstEvent.firstEventImage.image.childImageSharp.fluid}
         ></Img>
       </div>
-      <div className="column">
+      <div className="column" style={{ position: "relative" }}>
         <div
           style={{ position: "absolute", zIndex: 10 }}
           className="has-text-white-ter"
         >
-          프로젝트 리그
+          {secondEvent.title} <br/>
+          {secondEvent.title_kr} <br/>
+          {secondEvent.date}
+          {secondEvent.description}
         </div>
         <Img
           fluid={secondEvent.secondEventImage.image.childImageSharp.fluid}
         ></Img>
       </div>
-      <div className="column">
+      <div className="column" style={{ position: "relative" }}>
         <div
           style={{ position: "absolute", zIndex: 10 }}
           className="has-text-white-ter"
         >
-          네트워킹
+          {thirdEvent.title} <br/>
+          {thirdEvent.title_kr} <br/> 
+          {thirdEvent.date} <br/>
+          {thirdEvent.description}
         </div>
         <Img
           fluid={thirdEvent.thirdEventImage.image.childImageSharp.fluid}
-        ></Img>
+        ></Img> 
       </div>
     </div>
     {/* Partner */}
@@ -135,16 +144,22 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   firstEvent: PropTypes.shape({
     title: PropTypes.string,
+    title_kr: PropTypes.string,
+    date: PropTypes.string,
     description: PropTypes.string,
     firstEventImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
   }),
   secondEvent: PropTypes.shape({
     title: PropTypes.string,
+    title_kr: PropTypes.string,
+    date: PropTypes.string,
     description: PropTypes.string,
     secondEventImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
   }),
   thirdEvent: PropTypes.shape({
     title: PropTypes.string,
+    title_kr: PropTypes.string,
+    date: PropTypes.string, 
     description: PropTypes.string,
     thirdEventImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
   }),
@@ -221,6 +236,8 @@ export const pageQuery = graphql`
         subheading
         firstEvent {
           title
+          title_kr
+          date
           description
           firstEventImage {
             image {
@@ -234,6 +251,8 @@ export const pageQuery = graphql`
         }
         secondEvent {
           title
+          title_kr
+          date
           description
           secondEventImage {
             image {
@@ -247,6 +266,8 @@ export const pageQuery = graphql`
         }
         thirdEvent {
           title
+          title_kr
+          date
           description
           thirdEventImage {
             image {

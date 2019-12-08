@@ -1,27 +1,35 @@
 ---
 templateKey: index-page
-image: /img/home-jumbotron.jpg
+image: /img/index-main.jpg
 heading: Universal Network for IT
 subheading: 대학생 청년 IT 네트워크
 firstEvent:
-  title: What is Lorem Ipsum?
+  title: UNITED HACKATHON 'UNITHON'
+  title_kr: 대학생 연합 해커톤 '유니톤
+  date: SINCE 2015
   firstEventImage:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid2.jpg
+    alt: Unithon
+    image: /img/unithon-play.jpg
   description: >
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    참여과정이 어렵고 부담스럽던 다른 해커톤의 틀을 벗어나 즐거운 분위기 속에서 같은 관심을 가진 또래들과 교류하며, 자유롭게 프로젝트를 진행하고 결과를 도출하는 행사입니다.
+    2015년 8월 여러 IT 단체가 뜻을 모아 공동주관했으며, UNIT은 2016년 7월부터 함께하였습니다.
+
 secondEvent:
-  title: Why do we use it?
+  title: UNITED PROJECT LEAGUE(UNDEFINED) 
+  title_kr: 프로젝트 리그(행사명 미정)
+  date: MARCH 2020
   secondEventImage:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid2.jpg
+    alt: ProjectLeague
+    image: /img/project-league-play.jpg
   description: >
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    프로젝트 완성을 위한 환경을 조성하고 가이드를 제시합니다. 프로젝트 진행상황 공유, 집중도 향상을 위한 1박 2일 해커톤, 실무자 연계, 소정의 상금이 있는 데모데이 등을 진행하며, 6개월 동안 격주로 진행하며 팀별로 지원을 받습니다.
 thirdEvent:
-  title: Where does it come from?
+  title: NETWOKING SESSION
+  title_kr: 관심사 기반의 네트워킹 세션
+  date: MAY 2018
   thirdEventImage:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid2.jpg
+    alt: Networking
+    image: /img/network-play.jpg
   description: >      
-    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    개발자, 디자이너, 기획자들의 다양하고 세부적인 관심분야를 충족할 수 있는 소규모 네트워킹 세션을 진행합니다. 12 ~15명의 멤버들이 모여 하나의 주제로 이야기할 수 있는 자리를 마련합니다. (개발자들의 문제해결 방법, 1 ~2년차 디자이너의 커리어관리 등)
 ---
