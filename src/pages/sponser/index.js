@@ -25,7 +25,7 @@ export default class SponserIndexPage extends React.Component {
             Sponser List
           </h1>
         </div>
-        <section className="section">
+        <section className="section section-bg-color">
           <div className="container">
             <div className="content">
               <SponserRoll count={6}/>

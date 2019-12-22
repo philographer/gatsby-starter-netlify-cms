@@ -43,11 +43,8 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen main-bg-color box-main-color"
           style={{
-            boxShadow:
-              "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-            backgroundColor: "rgb(255, 68, 0)",
             color: "white",
             lineHeight: "1",
             padding: "0.25em"
@@ -56,11 +53,8 @@ export const IndexPageTemplate = ({
           {heading}
         </h1>
         <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen main-bg-color box-main-color"
           style={{
-            boxShadow:
-              "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-            backgroundColor: "rgb(255, 68, 0)",
             color: "white",
             lineHeight: "1",
             padding: "0.25em",
@@ -117,7 +111,7 @@ export const IndexPageTemplate = ({
     </div>
     {/* Partner */}
     <div>
-      <section className="section">
+      <section className="section section-bg-color">
         <div className="container">
           <div className="content">
             <PartnerRoll count={6} setIsShow={setIsShow} isShow={isShow} setModalData={setModalData}></PartnerRoll>
@@ -127,7 +121,7 @@ export const IndexPageTemplate = ({
     </div>  
     {/* Sponser */}
     <div>
-      <section className="section">
+      <section className="section section-bg-color">
         <div className="container">
           <div className="content">
             <SponserRoll count={6} setIsShow={setIsShow} isShow={isShow} setModalData={setModalData}></SponserRoll>

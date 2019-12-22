@@ -45,7 +45,7 @@ class PartnerRoll extends React.Component {
                       <br />
                     </span>
                     <div className="button" onClick={() => {setIsShow(true); setModalData(post.frontmatter);}}>
-                      Detail →
+                      웹페이지
                     </div>
                   </article>
                 </div>

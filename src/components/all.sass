@@ -9,6 +9,9 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+$main-color: #186f25
+$bg-color: #d8d8d8
+$navbar-background-color: $main-color
 
 .flex-container
   display: flex
@@ -172,3 +175,33 @@ $menu-label-color: $white-ter
 // custom design overwrite
 body 
   font-family: 'Noto Sans KR'
+
+.main-bg-color
+  background-color: $main-color
+
+.box-main-color
+  boxShadow: rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px
+
+//.navbar
+//  background-color: $main-color
+
+.navbar-brand
+  min-height: 3.75rem
+
+.section-bg-color
+  background-color: $bg-color
+
+.notification
+  border-radius: 20px
+  background-color: #ffffff
+
+.navbar-item
+  color: #ffffff
+
+.button
+  width: 80px;
+  height: 24px;
+  border-radius: 15px;
+  border: solid 1px #979797;
+  font-size: 10px;
+  font-weight: bold;
